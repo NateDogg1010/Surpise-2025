@@ -1,0 +1,39 @@
+>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Surprise</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Happy Valentine's Day! ❤️</h1>
+        <p class="message">Click the button for a surprise!</p>
+        <button onclick="showSurprise()">Reveal Surprise</button>
+        <p id="surprise-message" class="hidden">You are loved! 💕</p>
+
+        <!-- Bear Holding a Heart -->
+        <div class="bear hidden" id="bear">
+            <div class="bear-ears"></div>
+            <div class="bear-face">
+                <div class="bear-eyes"></div>
+                <div class="bear-nose"></div>
+                <div class="bear-mouth"></div>
+            </div>
+            <div class="heart-message">
+                <p>I love you, K-Dizzle 💖</p>
+            </div>
+        </div>
+
+        <div class="heart"></div>
+    </div>
+    <script src="script.js"></script>
+    <!-- Music Controls -->
+<audio id="valentine-music" loop>
+    <source src="love-song.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+</audio>
+<button id="music-btn" onclick="toggleMusic()">Play Music 🎵</button>
+</body>
+</html>
